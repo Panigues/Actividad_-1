@@ -74,31 +74,7 @@ public class Lista<T> {
 
     }
 
-//    public int size() {
-//        int listSize = 0;
-//        Nodo<T> current = head;
-//        while (current != null) {
-//            listSize = ++listSize;
-//            current = current.next;
-//        }
-//        System.out.println(listSize);
-//        return listSize;
-//    }
-//
-//    public void getElement(T index) {
-//        int currentIndex = 0;
-//        Nodo<T> current = head;
-//        while (current != null) {
-//            if (currentIndex == index){
-//                element = current.valor;
-//            }
-//            currentIndex = ++currentIndex;
-//            current = current.next;
-//        }
-//        System.out.println(listSize);
-//        return listSize;
-//        return element;
-//    }
+
 
 
 }
