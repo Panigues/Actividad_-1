@@ -66,18 +66,40 @@ public class Lista<T> {
         }
         nueva.printN();
     }
-    public void InsertarLista(T element){
+    public void InsertarLista(Lista<T> porAnexar){
         Nodo<T> current = tail;
-        while (current != null){
-            Nodo<T> nuevo = new Nodo<T>(element);
-            tail.next = nuevo;
-            nuevo.prev = tail;
-            tail = nuevo;
-            current = current.next;
-
-        }
+        current.next = porAnexar.head;
+        porAnexar.head = current;
+        tail = porAnexar.tail;
 
     }
+
+//    public int size() {
+//        int listSize = 0;
+//        Nodo<T> current = head;
+//        while (current != null) {
+//            listSize = ++listSize;
+//            current = current.next;
+//        }
+//        System.out.println(listSize);
+//        return listSize;
+//    }
+//
+//    public void getElement(T index) {
+//        int currentIndex = 0;
+//        Nodo<T> current = head;
+//        while (current != null) {
+//            if (currentIndex == index){
+//                element = current.valor;
+//            }
+//            currentIndex = ++currentIndex;
+//            current = current.next;
+//        }
+//        System.out.println(listSize);
+//        return listSize;
+//        return element;
+//    }
+
 
 }
 

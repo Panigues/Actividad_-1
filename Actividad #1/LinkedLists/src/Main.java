@@ -6,11 +6,11 @@ public class Main {
         // creacion de las listas
         Lista<Integer> Original = new Lista<>();
         Lista<Integer> PorAnexar = new Lista<>();
-        Original.insert(1);
+        Original.insertLast(1);
         Original.insertLast(2);
         Original.insertLast(3);
         Original.insertLast(4);
-        PorAnexar.insert(5);
+        PorAnexar.insertLast(5);
         PorAnexar.insertLast(6);
         PorAnexar.insertLast(7);
         PorAnexar.insertLast(8);
@@ -20,7 +20,9 @@ public class Main {
         System.out.println("PorAnexar");
         PorAnexar.printN();
         System.out.println("Original unido con PorAnexar");
-        Original.InsertarLista();
+        Original.InsertarLista(PorAnexar);
+        Original.printN();
+
         System.out.println();
         // Metodo 2
         System.out.println("Nueva contiene:");
