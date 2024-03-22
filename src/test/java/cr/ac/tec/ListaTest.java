@@ -30,7 +30,6 @@ public class ListaTest {
     @Test
     void sublist(){
         Lista<Integer> Original = new Lista<>();
-        Lista<Integer> PorAnexar = new Lista<>();
         Original.insertLast(1);
         Original.insertLast(2);
         Original.insertLast(3);
